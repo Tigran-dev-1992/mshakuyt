@@ -40,7 +40,8 @@ function App() {
         <div className="app__container sideContainer ">
           <Navigation />
           <div className="app__content">
-            <Route path="/mshakuyt" render={()=>HomePage()}/>
+            <Route exact path='/' render={() => <Redirect to={"/home"} />} />
+            <Route path="/home" render={()=>HomePage()}/>
             <Route path="/church" render={() => <Churches />} />
             <Route path="/temple" render={() => <Temples />} />
             <Route path="/fortresse" render={() => <Fortresses />} />
