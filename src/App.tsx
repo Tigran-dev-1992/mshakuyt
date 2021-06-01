@@ -40,12 +40,11 @@ function App() {
         <div className="app__container sideContainer ">
           <Navigation />
           <div className="app__content">
-            <Route path="/home" render={()=>HomePage()}/>
+            <Route path="/mshakuit" render={()=>HomePage()}/>
             <Route path="/church" render={() => <Churches />} />
             <Route path="/temple" render={() => <Temples />} />
             <Route path="/fortresse" render={() => <Fortresses />} />
             <Route path="/other" render={() => <Others/>} />
-            <Route path="/mshakuit" render={()=><Redirect to="/home"/>} />
           </div>
         </div>
       </BrowserRouter>

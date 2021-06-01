@@ -31,7 +31,7 @@ const Navigation = () => {
                 <div className={`nav__burger ${active ? "active" : ""}`} onClick={() => setActive(!active)}><span></span></div>
                 <div className={`nav__menu ${active ? "active" : ""}`}>
                     <ul className="nav__items d-flex ">
-                        <li className="nav__item"><NavLink to="/home" activeClassName="activeLink" >Գլխավոր</NavLink></li>
+                        <li className="nav__item"><NavLink to="/mshakuit" activeClassName="activeLink" >Գլխավոր</NavLink></li>
                         <li className="nav__item activeLink ">
                             <ChurchNavLink />
                         </li>
