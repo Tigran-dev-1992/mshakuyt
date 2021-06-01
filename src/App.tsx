@@ -40,7 +40,7 @@ function App() {
         <div className="app__container sideContainer ">
           <Navigation />
           <div className="app__content">
-            <Route path="/mshakuit" render={()=>HomePage()}/>
+            <Route path="/mshakuyt" render={()=>HomePage()}/>
             <Route path="/church" render={() => <Churches />} />
             <Route path="/temple" render={() => <Temples />} />
             <Route path="/fortresse" render={() => <Fortresses />} />
