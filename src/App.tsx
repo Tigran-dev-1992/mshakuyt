@@ -1,6 +1,6 @@
 import React, { useEffect} from 'react';
 import Navigation from './Componentss/Navigation/Navigation';
-import { BrowserRouter, Redirect, Route } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Redirect, Route } from 'react-router-dom';
 import HomePage from './Componentss/content/HomePage/HomePage';
 import Churches from './Componentss/content/Churches/Churches';
 import Modale from './Commons/Modale';
@@ -36,7 +36,7 @@ function App() {
           <Modale />
         </div>
         : ""}
-      <BrowserRouter>
+      <HashRouter>
         <div className="app__container sideContainer ">
           <Navigation />
           <div className="app__content">
@@ -47,7 +47,7 @@ function App() {
             <Route path="/other" render={() => <Others/>} />
           </div>
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
