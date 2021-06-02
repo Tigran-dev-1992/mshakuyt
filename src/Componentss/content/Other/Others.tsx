@@ -12,7 +12,7 @@ const Others = () => {
     const others= useSelector(otherSelector)
     return(
         <div>
-            {Buildings({buildings:others,buildingType:"temple"})}
+            {Buildings({buildings:others,buildingType:"other"})}
         </div>
     )
 }

@@ -22,8 +22,8 @@ export const Buildings: React.FC<PropsType> = ({ buildings, buildingType }) => {
     return (
         <div className="buiuldings">
             {buildings.map((building, i) => {
-                return <div id={`${buildingType}${i}`}>
-                    <Building name={building.name} text={building.text} key={i} photos={building.photos} />
+                return <div id={`${buildingType}${i}`} key={i} >
+                    <Building name={building.name} text={building.text}  photos={building.photos} />
                 </div>
             }
             )}

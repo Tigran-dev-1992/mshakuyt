@@ -1,6 +1,6 @@
 import React, { useEffect} from 'react';
 import Navigation from './Componentss/Navigation/Navigation';
-import { BrowserRouter, HashRouter, Redirect, Route } from 'react-router-dom';
+import { HashRouter, Redirect, Route } from 'react-router-dom';
 import HomePage from './Componentss/content/HomePage/HomePage';
 import Churches from './Componentss/content/Churches/Churches';
 import Modale from './Commons/Modale';

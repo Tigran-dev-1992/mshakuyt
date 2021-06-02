@@ -1,4 +1,4 @@
-import React, {  useState } from "react"
+import React, { useState } from "react"
 import { NavLink } from "react-router-dom"
 import logo from "../../images/logo.png"
 
@@ -21,6 +21,22 @@ const Navigation = () => {
             setActive(false)
         })
     })
+
+let y = 0
+    const navVizibility = () => {
+        let nav = document.querySelector(".navigation")
+        if (window.scrollY>y) {
+            nav?.classList.add("hidden")
+            y=window.scrollY
+        }else{
+            nav?.classList.remove("hidden")
+            y=window.scrollY
+        }
+
+    }
+
+    document.addEventListener("scroll", navVizibility)
+
     return (
         <div className="navigation">
             <div className={`nav__menuBg ${active ? "active" : ""} `}></div>
@@ -45,7 +61,7 @@ const Navigation = () => {
                     </ul>
                 </div>
             </div>
-        </div>
+        </div >
 
     )
 }

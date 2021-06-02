@@ -71,6 +71,15 @@ body {
     position: fixed;
     max-width: 1200px;
     width: 100%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s ease all;
+    top: 0;
+    &.hidden{
+      top: -100px;
+      visibility: hidden;
+      // opacity: 0;
+    }  
   }
   .nav__content{
     position: relative;
