@@ -1,0 +1,43 @@
+{
+    "Home": {
+        "1": "Home",
+           "name": "Armenian culture",
+        "content":"Armenia has a unique culture! It is reflected in every spectrum of life: architecture, theater, music, painting, literature. For centuries Armenians are trying to create and preserve every part of their culture and traditions. Armenians appreciate, love and pass on from generation to generation every poem, work of art, film masterpieces, every element of folk dances, and every Armenian is proud to contribute to the prosperity of Armenian culture."
+    },
+    "Churches": {
+        "1": "Churches",
+        "items": {
+            "1": "Odzun",
+            "2": "Bjni",
+            "3": "Areni",
+            "item": {
+                "1": "Areni"
+            }
+        }
+    },
+    "Temples": {
+        "1": "Temples",
+        "items": {
+            "1": "Garnu",
+            "2": "Zvartnoc",
+            "3": "Echmiadzin",
+            "item": {
+                "1": "Echmiadzin"
+            }
+        }
+    },
+    "Fortresses": {
+        "1": "Fortresses",
+        "items":{
+            "1":"Amberd",
+            "2":"Marzpetuni",
+            "3":"Tigranakert",
+            "item":{
+                "1":"Tigranakert"
+            }
+        }
+    },
+    "Other": {
+        "1": "Other Places"
+    }
+}

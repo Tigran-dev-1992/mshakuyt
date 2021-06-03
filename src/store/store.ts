@@ -1,4 +1,6 @@
-import { combineReducers, createStore } from "redux";
+import { applyMiddleware, combineReducers, createStore } from "redux";
+import thunk from "redux-thunk";
+import { appReducer } from "./reducers/app-reducer";
 import { churchesReducer } from "./reducers/church-reducer";
 import { fortressesReducer } from "./reducers/fortresses-reducer";
 import { modaleReducer } from "./reducers/modale-reducer";
@@ -14,9 +16,10 @@ const rootReducer = combineReducers({
      modale :modaleReducer,
      temples :templesReducer,
      fortresses : fortressesReducer,
-     others: otherReducer
+     others: otherReducer,
+     app:appReducer
     })
 
 export type RootStateType = ReturnType<typeof rootReducer>
-export const store = createStore(rootReducer)
+export const store = createStore(rootReducer,applyMiddleware(thunk))
 

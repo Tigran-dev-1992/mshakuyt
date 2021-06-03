@@ -1,31 +1,37 @@
-import shaki1 from "../../images/shaki/shaki1.jpg"
-import shaki2 from "../../images/shaki/shaki2.jpg"
-import shaki3 from "../../images/shaki/shaki3.jpg"
-import shaki4 from "../../images/shaki/shaki4.jpg"
+import { Dispatch } from "react"
+import { BuildingType } from "../../Commons/Buildings/Buildings"
+import { InferActionsType } from "../store"
+import { LanguageType } from "./church-reducer"
+import { otherData } from "./MainData"
 
 
+const OTHER_LANGUAGE_CHANGE = "OTHER_LANGUAGE_CHANGE"
 
-
-const otherInitialState={
-     others : [
-        {
-            name: "Շաքի Ջրվեժ",
-            text: `Շաքի գյուղի մոտակայքում Որոտան գետի վտակները միմյանց են միանում փոքր, բայց գեղեցիկ ջրվեժի միջոցով: Գյուղի մոտակայքում է գտնվում նաեւ Շաքի վանքի ավերակները: Ըստ առասպելի այս տեղանքը անվանվել է Շաքի, 93 կույսերից մեկի պատվին, որը հրաշքով փրկվել էր ջրհեղեղից:`,
-            photos: [shaki1, shaki2, shaki3, shaki4]
-        }
-        
-
-    ] 
+const otherInitialState = {
+    others: [] as BuildingType[]
 }
 
 type OtherInitialStateType = typeof otherInitialState
 
 
-export const otherReducer = (state:OtherInitialStateType= otherInitialState,action:any):OtherInitialStateType=>{
-    switch(action.type){
-
+export const otherReducer = (state: OtherInitialStateType = otherInitialState, action: OtherActionType): OtherInitialStateType => {
+    switch (action.type) {
+        case OTHER_LANGUAGE_CHANGE:
+            return {
+                ...action.newState
+            }
+        default:
+            return state
     }
-    return state
 }
+
+const otherActions = {
+    changeLanguage: (newState: OtherInitialStateType) => ({ type: OTHER_LANGUAGE_CHANGE, newState } as const)
+}
+export const getOtherNewLanguageState = (lng:LanguageType)=>(dispatch:Dispatch<any>)=>{
+    const newState = otherData[lng]
+    dispatch(otherActions.changeLanguage(newState))
+}
+type OtherActionType = InferActionsType<typeof otherActions>
 
 

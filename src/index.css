@@ -85,6 +85,15 @@ h1, h2, h3, h4, h5, h6 {
 
 /* font-size:  calc(16px + 20 * (100vw / 1400)); */
 /*--------------------*/
+.loader {
+  height: 100vh;
+}
+.loader img {
+  display: block;
+  width: calc(200px + 300 * (100vw / 1400));
+  height: calc(200px + 300 * (100vw / 1400));
+}
+
 .app {
   font-family: "Segoe UI";
 }
@@ -124,6 +133,11 @@ h1, h2, h3, h4, h5, h6 {
   max-width: calc(40px + 20 * (100vw / 1400));
   border-radius: 50px;
   margin-left: 20px;
+}
+.nav__logo img.lng {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
 }
 
 body.mouse .navigation {
@@ -353,10 +367,14 @@ body.mouse .nav__item-item-item {
 }
 
 .building__photo {
+  transition: 0.3s ease all;
   width: 200px;
   height: 200px;
   cursor: pointer;
   padding: 10px;
+}
+.building__photo:hover {
+  opacity: 0.5;
 }
 
 @media (max-width: 987px) {
@@ -499,6 +517,16 @@ body.mouse .nav__item-item-item {
   body.touch .nav__logo {
     padding: 10px;
   }
+  body.touch .building__photo {
+    transition: 0.3s ease all;
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    padding: 10px;
+  }
+  body.touch .building__photo:hover {
+    opacity: 1;
+  }
 
   .homePage__info {
     margin-top: 20px;
@@ -519,35 +547,5 @@ body.mouse .nav__item-item-item {
   }
   .homePage__text:hover {
     box-shadow: none;
-  }
-
-  .building::after {
-    content: "";
-    display: block;
-    height: 3px;
-    width: 50%;
-    background: #000;
-    margin: 20px auto 40px;
-  }
-
-  .building__name {
-    margin: 0 0 20px;
-  }
-
-  .building__text {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 26px;
-  }
-
-  .building__photos {
-    margin-top: 20px;
-  }
-
-  .building__photo {
-    width: 200px;
-    height: 200px;
-    cursor: pointer;
-    padding: 10px;
   }
 }

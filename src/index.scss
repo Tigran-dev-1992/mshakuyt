@@ -52,7 +52,14 @@ body {
 
   $title:calc(25px + 25 * (100vw / 1400));
 
-
+.loader {
+  height: 100vh;
+  img{
+    display: block;
+    width: calc(200px + 300 * (100vw / 1400));
+    height: calc(200px + 300 * (100vw / 1400));
+  }
+}
      
   .app {
     font-family: "Segoe UI";
@@ -64,6 +71,7 @@ body {
   .app__content{
       padding: 100px 10px 0 10px;
   }
+  
   
   /* nav>>>>>>>>>>>>>>>>> */
   .navigation{
@@ -90,6 +98,11 @@ body {
     max-width: calc(40px + 20 * (100vw / 1400));
     border-radius: 50px;
     margin-left: 20px;
+    &.lng{
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+    }
   }
 
 body.mouse{
@@ -343,11 +356,15 @@ body.mouse{
 .building__photos{
   margin-top: 50px;
 }
-.building__photo {
+.building__photo { 
+  transition: 0.3s ease all;
   width: 200px;
   height: 200px;
   cursor:pointer;
   padding: 10px;
+  &:hover{
+    opacity: 0.5;
+  }
 }
 
 
@@ -505,6 +522,16 @@ body.mouse{
     .nav__logo{
       padding: 10px;
     }
+    .building__photo { 
+      transition: 0.3s ease all;
+      width: 200px;
+      height: 200px;
+      cursor:pointer;
+      padding: 10px;
+      &:hover{
+        opacity: 1;
+      }
+    }
   }
     
 
@@ -543,32 +570,6 @@ body.mouse{
  // homePage>>>>>>>>>>>
 
  //churches>>>>>>>>>>>>>>>>>>
-
-.building::after{
-  content: "";
-  display: block;
-  height: 3px;
-  width: 50%;
-  background: #000;
-  margin: 20px auto 40px;
-}
-.building__name{
-  margin: 0 0 20px;
-}
-.building__text{
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 26px;
-}
-.building__photos{
-  margin-top: 20px;
-}
-.building__photo {
-  width: 200px;
-  height: 200px;
-  cursor:pointer;
-  padding: 10px;
-}
 
 
 //churches>>>>>>>>>>>>>>>>>>
