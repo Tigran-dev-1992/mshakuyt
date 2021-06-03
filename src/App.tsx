@@ -20,12 +20,12 @@ import { LanguageType } from './store/reducers/church-reducer';
 
 
 function App() {
-  
+
   const dispatch = useDispatch()
   const isInitialazed = useSelector(isInitializedSelector)
   const [t, i18n] = useTranslation()
   useEffect(() => {
-    const lng:LanguageType = reactLocalStorage.get('lng')
+    const lng: LanguageType = reactLocalStorage.get('lng',"arm")
     i18n.changeLanguage(lng)
     dispatch(getInitialazed(lng))
     setScreenMode()
@@ -59,7 +59,7 @@ function App() {
           <Navigation />
           <div className="app__content">
             <Route exact path='/' render={() => <Redirect to={"/home"} />} />
-            <Route path="/home" render={() => <HomePage/>} />
+            <Route path="/home" render={() => <HomePage />} />
             <Route path="/church" render={() => <Churches />} />
             <Route path="/temple" render={() => <Temples />} />
             <Route path="/fortresse" render={() => <Fortresses />} />
