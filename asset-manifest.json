@@ -1,19 +1,20 @@
 {
   "files": {
-    "main.css": "/mshakuyt/static/css/main.de8e1277.chunk.css",
-    "main.js": "/mshakuyt/static/js/main.c5d8c979.chunk.js",
-    "main.js.map": "/mshakuyt/static/js/main.c5d8c979.chunk.js.map",
-    "runtime-main.js": "/mshakuyt/static/js/runtime-main.778032f8.js",
-    "runtime-main.js.map": "/mshakuyt/static/js/runtime-main.778032f8.js.map",
+    "main.css": "/mshakuyt/static/css/main.4cd83c75.chunk.css",
+    "main.js": "/mshakuyt/static/js/main.d87030ab.chunk.js",
+    "main.js.map": "/mshakuyt/static/js/main.d87030ab.chunk.js.map",
+    "runtime-main.js": "/mshakuyt/static/js/runtime-main.9dee0f32.js",
+    "runtime-main.js.map": "/mshakuyt/static/js/runtime-main.9dee0f32.js.map",
     "static/css/2.9d3a6e71.chunk.css": "/mshakuyt/static/css/2.9d3a6e71.chunk.css",
-    "static/js/2.5728ff46.chunk.js": "/mshakuyt/static/js/2.5728ff46.chunk.js",
-    "static/js/2.5728ff46.chunk.js.map": "/mshakuyt/static/js/2.5728ff46.chunk.js.map",
-    "static/js/3.e3d69913.chunk.js": "/mshakuyt/static/js/3.e3d69913.chunk.js",
-    "static/js/3.e3d69913.chunk.js.map": "/mshakuyt/static/js/3.e3d69913.chunk.js.map",
+    "static/js/2.2573d51e.chunk.js": "/mshakuyt/static/js/2.2573d51e.chunk.js",
+    "static/js/2.2573d51e.chunk.js.map": "/mshakuyt/static/js/2.2573d51e.chunk.js.map",
+    "static/js/3.82fc1c1d.chunk.js": "/mshakuyt/static/js/3.82fc1c1d.chunk.js",
+    "static/js/3.82fc1c1d.chunk.js.map": "/mshakuyt/static/js/3.82fc1c1d.chunk.js.map",
     "index.html": "/mshakuyt/index.html",
     "static/css/2.9d3a6e71.chunk.css.map": "/mshakuyt/static/css/2.9d3a6e71.chunk.css.map",
-    "static/css/main.de8e1277.chunk.css.map": "/mshakuyt/static/css/main.de8e1277.chunk.css.map",
-    "static/js/2.5728ff46.chunk.js.LICENSE.txt": "/mshakuyt/static/js/2.5728ff46.chunk.js.LICENSE.txt",
+    "static/css/main.4cd83c75.chunk.css.map": "/mshakuyt/static/css/main.4cd83c75.chunk.css.map",
+    "static/js/2.2573d51e.chunk.js.LICENSE.txt": "/mshakuyt/static/js/2.2573d51e.chunk.js.LICENSE.txt",
+    "static/media/am.fb9ea73b.png": "/mshakuyt/static/media/am.fb9ea73b.png",
     "static/media/amberd1.e7debd5c.jpg": "/mshakuyt/static/media/amberd1.e7debd5c.jpg",
     "static/media/amberd2.2349e35e.jpg": "/mshakuyt/static/media/amberd2.2349e35e.jpg",
     "static/media/amberd3.0fe33e0e.jpg": "/mshakuyt/static/media/amberd3.0fe33e0e.jpg",
@@ -44,6 +45,8 @@
     "static/media/garni4.66d09ff3.jpg": "/mshakuyt/static/media/garni4.66d09ff3.jpg",
     "static/media/garni5.0bac7dbb.jpg": "/mshakuyt/static/media/garni5.0bac7dbb.jpg",
     "static/media/garni6.70f1cd77.jpg": "/mshakuyt/static/media/garni6.70f1cd77.jpg",
+    "static/media/getFetch.cjs": "/mshakuyt/static/media/getFetch.582d29c4.cjs",
+    "static/media/loader.6fdf6f7f.gif": "/mshakuyt/static/media/loader.6fdf6f7f.gif",
     "static/media/logo.3bd0d400.png": "/mshakuyt/static/media/logo.3bd0d400.png",
     "static/media/marzpetunu1.678853e1.jpg": "/mshakuyt/static/media/marzpetunu1.678853e1.jpg",
     "static/media/marzpetunu2.f6d25c1a.jpg": "/mshakuyt/static/media/marzpetunu2.f6d25c1a.jpg",
@@ -78,10 +81,10 @@
     "static/media/zvartnoc6.3da0cbf9.jpg": "/mshakuyt/static/media/zvartnoc6.3da0cbf9.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.778032f8.js",
+    "static/js/runtime-main.9dee0f32.js",
     "static/css/2.9d3a6e71.chunk.css",
-    "static/js/2.5728ff46.chunk.js",
-    "static/css/main.de8e1277.chunk.css",
-    "static/js/main.c5d8c979.chunk.js"
+    "static/js/2.2573d51e.chunk.js",
+    "static/css/main.4cd83c75.chunk.css",
+    "static/js/main.d87030ab.chunk.js"
   ]
 }
